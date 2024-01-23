@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold text-center my-10">Your Money Calculator...</h1>
+
+    <main>
+        <section class="w-4/5 mx-auto mb-10">
+            <div class="grid sm:grid-cols-1 md:grid-cols-3 mb-14 gap-6">
+                <a href="#deposit-filed"><div class="bg-lime-600 p-6 rounded text-center drop-shadow-xl cursor-pointer">
+                    <h1 class="text-4xl text-white font-bold mb-5">Deposit</h1>
+                    <h2 class="text-3xl text-white font-bold"><span id="deposit-amount">00</span> <strong >৳</strong></h2>
+                </div></a>
+                <a href="#withdraw-filed"><div class="bg-amber-500 p-6 rounded text-center drop-shadow-lg cursor-pointer">
+                    <h1 class="text-4xl text-white font-bold mb-5">Withdraw</h1>
+                    <h2 class="text-3xl text-white font-bold"><span id="withdraw-amount">00</span> <strong >৳</strong></h2>
+                </div></a>
+                <div class="bg-emerald-400 p-6 rounded text-center drop-shadow-lg cursor-pointer">
+                    <h1 class="text-4xl text-white font-bold mb-5">Balance</h1>
+                    <h2 class="text-3xl text-white font-bold"><span id="total-amount">1200</span> <strong >৳</strong></h2>
+                </div>
+            </div>
+    
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-emerald-500 p-6 rounded drop-shadow-xl cursor-pointer">
+                    <h1 class="text-2xl text-white font-bold mb-5">Want to Deposit ?</h1>
+                    <label class="block text-white mb-2" for="deposit-filed">Enter Amount</label>
+                    <input class="mb-5 w-4/5 p-1 px-2 rounded focus:outline-none focus:outline-blue-400 block" id="deposit-filed" type="text" placeholder="Enter your deposit amount">
+                    <button id="btn-deposit" class="bg-lime-400 font-semibold hover:bg-lime-700 hover:text-white px-5 py-2 rounded text-black" type="submit">Deposit</button>
+                </div>
+                <div class="bg-rose-500 p-6 rounded drop-shadow-xl cursor-pointer">
+                    <h1 class="text-2xl text-white font-bold mb-5">Want to Withdraw ?</h1>
+                    <label class="block text-white mb-2" for="withdraw-filed">Enter Amount</label>
+                    <input class="mb-5 w-4/5 p-1 px-2 rounded focus:outline-none focus:outline-blue-400 block" id="withdraw-filed" type="text" placeholder="Enter your withdraw amount">
+                    <button id="btn-withdraw" class="bg-teal-500 font-semibold hover:bg-sky-400 hover:text-black px-5 py-2 rounded text-white" type="submit">Deposit</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h1 class="md:absolute bottom-0 left-0 right-0 text-center">Developed By <a href="https://github.com/galibmia">Galib Mia</a></h1>
+    </footer>
+    
+
+    <script src="js/desposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
